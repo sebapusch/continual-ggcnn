@@ -123,9 +123,10 @@ def load_task_sequence(args: argparse.Namespace) -> list[Task]:
         random.Random(args.seed).shuffle(object_ids)
         train_count = max(1, min(len(object_ids) - 1, int(len(object_ids) * args.split)))
         train_ids = set(object_ids[:train_count])
+        dataset_root = args.dataset_path / name if (args.dataset_path / name).is_dir() else args.dataset_path
         samples = [
-            Sample(args.dataset_path / row["sample_path"],
-                   args.dataset_path / row["grasp_path"], row["object_id"])
+            Sample(dataset_root / row["sample_path"],
+                   dataset_root / row["grasp_path"], row["object_id"])
             for row in rows
         ]
         for sample in samples:
