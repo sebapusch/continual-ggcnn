@@ -16,7 +16,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 
-GROUPS = ("food", "kitchen", "tools", "shapes", "tasks")
+GROUPS = ("food", "kitchen", "tools", "tasks")
 CSV_FIELDS = ("sample_path", "grasp_path", "object_id", "categories", "group")
 
 

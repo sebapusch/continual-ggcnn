@@ -12,10 +12,6 @@
     "Stapler", "StaplerWithStaples", "Screwdriver", "Wrench", "Pencil",
     "Pen", "Marker", "Flashlight"
   ],
-  "shapes": [
-    "Ball", "TennisBall", "Baseball", "SoccerBall", "Ring", "Chain",
-    "Block", "Brick", "Cube", "Dice", "Die", "Rock"
-  ],
   "tasks": [
     "Toy", "ToyFigure", "Airplane", "ChessBoard", "VideoGameConsole",
     "VideoGameController", "TableClock", "Clock", "Shirt", "Book"
